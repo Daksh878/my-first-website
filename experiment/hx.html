@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timetable using rowspan and colspan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .question-box {
+            border: 2px solid black;
+            width: 85%;
+            margin: 20px auto;
+            padding: 10px;
+        }
+        .q-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 1px solid black;
+            padding-bottom: 8px;
+        }
+        .q-number {
+            background: black;
+            color: white;
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .q-title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .q-text {
+            padding: 10px 0;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        h2 {
+            text-align: center;
+            margin: 15px 0;
+            font-size: 18px;
+        }
+        table {
+            border-collapse: collapse;
+            margin: 0 auto 30px auto;
+            width: 95%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="question-box">
+        <div class="q-header">
+            <div class="q-number">6</div>
+            <div class="q-title">Timetable using rowspan and colspan (5 Marks)</div>
+        </div>
+        <div class="q-text">
+            Create an HTML page to display a class timetable<br>
+            for a semester. Use colspan and rowspan for heading<br>
+            and lunch break as shown.
+        </div>
+
+        <!-- Table 1 - Upar wala -->
+        <h2>Class Timetable (Semester I)</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>9:00 - 10:00</th>
+                <th>10:00 - 11:00</th>
+                <th>11:00 - 12:00</th>
+                <th>12:00 - 1:00</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>HTML</td>
+                <td>Mathematics</td>
+                <td>Programming</td>
+                <td rowspan="5">Lunch<br>Break<br>(12:00 - 1:00)</td>
+            </tr>
+            <tr><td>Tuesday</td><td>Mathematics</td><td>HTML</td><td>English</td></tr>
+            <tr><td>Wednesday</td><td>Programming</td><td>English</td><td>HTML</td></tr>
+            <tr><td>Thursday</td><td>English</td><td>Programming</td><td>Mathematics</td></tr>
+            <tr><td>Friday</td><td>HTML</td><td>English</td><td>Programming</td></tr>
+        </table>
+
+        <hr>
+
+        <!-- Table 2 - Neeche wala jo tumne circle kiya tha -->
+        <h2>Class Timetable - Second Table</h2>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>9:00-10:00</th>
+                <th>10:00-11:00</th>
+                <th>11:00-12:00</th>
+                <th>12:00-1:00</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td>HTML</td>
+                <td>Mathematics</td>
+                <td>Programming</td>
+                <td rowspan="5">Lunch Break</td>
+            </tr>
+            <tr><td>Tuesday</td><td>Mathematics</td><td>HTML</td><td>English</td></tr>
+            <tr><td>Wednesday</td><td>Programming</td><td>English</td><td>HTML</td></tr>
+            <tr><td>Thursday</td><td>English</td><td>Programming</td><td>Mathematics</td></tr>
+            <tr><td>Friday</td><td>HTML</td><td>English</td><td>Programming</td></tr>
+        </table>
+    </div>
+
+</body>
+</html>
